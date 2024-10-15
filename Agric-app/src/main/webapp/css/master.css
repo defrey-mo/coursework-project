@@ -1,0 +1,177 @@
+:root {
+    --main-color: #FE9900;
+    --alt-color: #282828;
+    --body-bg-color: #F5F5F5;
+    --orange-dark: #E4811C;
+    --shadow-color: #EDEDED;
+    --border-color: #999;
+    font-size: 15px;
+    --main-transition: all 0.4s ease-in-out;
+    --danger-color: #E61601;
+    --danger-dark-color:#81160b;
+    --gold-color:#F6B01E;
+    --green:#1C885F;
+    --blue:#344F88;
+    --dark-blue:#21396b;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+    font-family:cursive, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main{
+    position: relative;
+}
+body {
+    direction: ltr;
+   
+    background-color:var(--body-bg-color);
+    
+    overflow-x: hidden;
+
+}
+
+
+/* Start Framework*/
+.row,
+.column {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-inline: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width:576px) {
+
+    /*small devics Landscape phones*/
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (min-width:768px) {
+
+    /*meduim devices =>tablets*/
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+@media (min-width:992px) {
+
+    /*desktop devices*/
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    /*Large Screens*/
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.btn,.btn-face,.btn-danger {
+    border: 0;
+    box-shadow: 0 0 5px 5px var(--shadow-color);
+    
+}
+.btn{
+    background-color: rgb(9, 189, 9);
+}
+.btn-face{
+    background-color: var(--blue);
+}
+.btn-danger{background-color: var(--danger-color);}
+.btn-outline,
+.btn,.btn-face,.btn-danger {
+    outline: none;
+    padding: 7px 15px;
+    color: #fff !important;
+    border-radius: 5px;
+    display: inline-block;
+    margin-inline-start: 20px;
+    font-weight: 500;
+    transition: var(--main-transition);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.btn:hover {
+    background-color: #4292dc);
+}
+
+.btn-outline:hover {
+    border: 2px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+
+}
+.btn-danger:hover{
+    background-color: rgb(9, 189, 9);
+}
+.btn-face:hover{
+    background-color: rgb(9, 189, 9));
+}
+
+.border-top-1 {
+    border-top: 1px solid var(--border-color);
+}
+
+.border-bottom-1 {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.align-items-center {
+    align-items: center;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: var(--alt-color)
+}
+
+ul {
+    list-style: none;
+}
